@@ -1,0 +1,29 @@
+version: "3"
+services:
+  eurekaadminserver:
+    build:
+      context: ./Eureka_Admin_Server
+    ports:
+      - "8761:8761"
+  clientone:
+    build:
+      context: ./ClientOne
+    ports:
+      - "8080-8085:8040"
+    depends_on:
+      - eurekaadminserver
+  clienttwo:
+    build:
+      context: ./ClientTwo
+    ports:
+      - "8086-8090:8050"
+    depends_on:
+      - eurekaadminserver
+  zuulproxyserver:
+    build:
+      context: ./ZuulProxyServer
+    ports:
+      - "8000:8000"
+    depends_on:
+      - clientone
+      - clienttwo

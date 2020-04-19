@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "7af5b046-724b-4995-b30e-5a1e53824532",
+		"name": "Zuul_Eureka_SpringBoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/simpleZuul/Controller/simpleZuulEndpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/simpleZuul/Controller/simpleZuulEndpoint",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"simpleZuul",
+						"Controller",
+						"simpleZuulEndpoint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/clientZuulOne/clientOne/ControllerOne/EndpointOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/clientZuulOne/clientOne/ControllerOne/EndpointOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"clientZuulOne",
+						"clientOne",
+						"ControllerOne",
+						"EndpointOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/clientZuulOne/clientOne/ControllerOne/EndpointTwo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/clientZuulOne/clientOne/ControllerOne/EndpointTwo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"clientZuulOne",
+						"clientOne",
+						"ControllerOne",
+						"EndpointTwo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/clientZuulOne/clientOne/ControllerTwo/EndpointOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/clientZuulOne/clientOne/ControllerTwo/EndpointOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"clientZuulOne",
+						"clientOne",
+						"ControllerTwo",
+						"EndpointOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/clientZuulOne/clientOne/ControllerTwo/EndpointTwo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/clientZuulOne/clientOne/ControllerTwo/EndpointTwo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"clientZuulOne",
+						"clientOne",
+						"ControllerTwo",
+						"EndpointTwo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/clientZuulTwo/clientTwo/ControllerOne/EndpointOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/clientZuulTwo/clientTwo/ControllerOne/EndpointOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"clientZuulTwo",
+						"clientTwo",
+						"ControllerOne",
+						"EndpointOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/clientZuulTwo/clientTwo/ControllerOne/EndpointTwo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/clientZuulTwo/clientTwo/ControllerOne/EndpointTwo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"clientZuulTwo",
+						"clientTwo",
+						"ControllerOne",
+						"EndpointTwo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/clientZuulTwo/clientTwo/ControllerTwo/EndpointOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/clientZuulTwo/clientTwo/ControllerTwo/EndpointOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"clientZuulTwo",
+						"clientTwo",
+						"ControllerTwo",
+						"EndpointOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/clientZuulTwo/clientTwo/ControllerTwo/EndpointTwo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/clientZuulTwo/clientTwo/ControllerTwo/EndpointTwo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"clientZuulTwo",
+						"clientTwo",
+						"ControllerTwo",
+						"EndpointTwo"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
