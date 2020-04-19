@@ -62,7 +62,7 @@ Your Zuul proxy server should be now running on http://localhost:8000, ClientOne
 2. Import Postman collection from the `Zuul_Eureka_SpringBoot.postman_collection.json` file
 3. Enjoy !!
 
-# NOTE : To see server side load balancing observe terminal logs of `docker-compose`. When trying to hit same endpoint multiple times parallely. 
+## NOTE : To see server side load balancing observe terminal logs of `docker-compose`. When trying to hit same endpoint multiple times parallely. 
 
 ## Built With
 
