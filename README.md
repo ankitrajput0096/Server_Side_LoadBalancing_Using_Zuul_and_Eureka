@@ -54,7 +54,7 @@ docker-compose up --scale clientone=3 --scale clienttwo=3
 Can scale up clientone and clienttwo services to max instances of 5.
 If you want to scale even higher, then increase the port range in `docker-compose` file.
 
-Your Zuul proxy server should be now running on http://localhost:8000, ClientOne server should be now running on http://localhost:8080-8085 and ClientTwo server should be now running on http://localhost:8086-90 and Eureka server should be now running on http://localhost:8761
+Your Zuul proxy server should be now running on http://localhost:8000, ClientOne server should be now running on http://localhost:8080-8085 and ClientTwo server should be now running on http://localhost:8086-90 and Eureka server cluster should be now running on http://localhost:9001, http://localhost:9002, http://localhost:9003 
 
 ## Get an access to all exposed API's with Postman
 
