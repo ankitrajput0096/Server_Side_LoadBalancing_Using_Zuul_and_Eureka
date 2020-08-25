@@ -14,10 +14,15 @@ public class simpleZuulController {
     @Autowired
     private Environment env;
 
-    @RequestMapping(value="/simpleZuulEndpoint", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(
+            value="/simpleZuulEndpoint",
+            method = RequestMethod.GET,
+            produces = "application/json")
     public ResponseEntity<String> controllerClientOneEndpointOne() {
         return ResponseEntity
         .ok()
-        .body("This is hello zuul endpoint from zuul controller in zuul proxy service on port : " + (env.getProperty("local.server.port")));
+        .body("This is hello zuul endpoint from zuul controller in " +
+                "zuul proxy service on port : " +
+                (env.getProperty("local.server.port")));
     }
 }

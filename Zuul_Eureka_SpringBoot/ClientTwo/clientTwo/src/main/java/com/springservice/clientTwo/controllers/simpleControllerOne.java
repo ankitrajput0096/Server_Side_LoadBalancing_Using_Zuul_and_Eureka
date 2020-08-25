@@ -17,7 +17,10 @@ public class simpleControllerOne {
     @Autowired
     private Environment env;
 
-    @RequestMapping(value="/EndpointOne", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(
+            value="/EndpointOne",
+            method = RequestMethod.GET,
+            produces = "application/json")
     public ResponseEntity<String> controllerClientOneEndpointOne() {
 
         //Add a small delay in response
@@ -25,10 +28,14 @@ public class simpleControllerOne {
 
         return ResponseEntity
         .ok()
-        .body("This is hello endpoint one from controller one in client Two on port : " + (env.getProperty("local.server.port")));
+        .body("This is hello endpoint one from controller one in client" +
+                " Two on port : " + (env.getProperty("local.server.port")));
     }
 
-    @RequestMapping(value="/EndpointTwo", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(
+            value="/EndpointTwo",
+            method = RequestMethod.GET,
+            produces = "application/json")
     public ResponseEntity<String> controllerClientOneEndpointTwo() {
 
         //Add a small delay in response
@@ -36,6 +43,7 @@ public class simpleControllerOne {
 
         return ResponseEntity
         .ok()
-        .body("This is hello endpoint two from controller one in client Two on port : " + (env.getProperty("local.server.port")));
+        .body("This is hello endpoint two from controller one in client" +
+                " Two on port : " + (env.getProperty("local.server.port")));
     }
 }
